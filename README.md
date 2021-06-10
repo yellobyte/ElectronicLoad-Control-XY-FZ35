@@ -14,7 +14,7 @@ For more pics pls look in folder [**Doc**](https://github.com/yellobyte/Electron
 
 ![github](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Doc/Load1a.JPG)
 
-You find a few real world charts in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Program). You can load them into the program and have a look at them.
+You find a few real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Program). You can load them into the program and have a look at them.
 
 ## Wiring ##
 
