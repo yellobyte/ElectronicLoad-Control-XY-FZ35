@@ -4,22 +4,24 @@ This program controls "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on dif
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/XY-FZ35a.jpg)
 
-A programmable electronic load emulates DC or AC resistance loads required to perform functional tests of batteries, power supplies or solar cells.
-In the simpliest case an electronic load just sinks current (absorbes power). The amount of current can be set and the load tries to keep it stable even when the applied voltage changes.
+A programmable electronic load emulates DC or AC resistance loads required to perform functional tests of batteries, different types of power supplies, solar cells, technical equipment, etc. There are many other useful scenarios.
+In the simpliest case an electronic load just sinks current (absorbes power). The amount of current can be set and the load tries to keep it stable even when the applied voltage changes. The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W.
+That doesn't sound much but really is enough for most cases.
 
 ## The Control Program ##
 
-I'm using the combination program + electronic load mainly to do accu/battery discharge tests and sometimes for testing solar power cells. The program displays a chart, can write the final chart to hard drive, load a chart from hard drive, print the chart, etc.
+I'm using the combination program + electronic load mainly for accu/battery discharge tests and also solar power cell tests every now and then. The program displays a chart, can write the final chart to hard drive, load a chart from hard drive, print the chart, etc.  
+That gives you the easy ability to compare the final test results of different batteries or accus for example.  
 For more pics pls look in folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc). You find the executable in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). The program runs on Win8.1/Win10. In rare cases you need to install the visual studio 2017 runtime libraries (easily found on the internet).
 
 ![github](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/raw/main/Doc/Load1a.JPG)
 
-You find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). You can load them into the program and have a look at them.
+You also find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). You can load them into the program and have a look at them.
 
 ## Wiring ##
 
-The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). This program uses this option to control the devices.
-The only thing needed is a cheap USB-TTL converter between PC and the load.
+The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). They accept operating instructions and send status messages if requested.  
+This program uses this option to control the devices. For that you only need a cheap USB-TTL converter (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and the device .
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
 
@@ -40,4 +42,4 @@ Please note:
 Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In those cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
 
 ## Important: ##
-Don't forget to set the correct hardware version of the device before controlling it (Settings->Hardware Version->25W/35W) !
+Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !
