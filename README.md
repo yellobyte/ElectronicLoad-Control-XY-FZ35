@@ -24,7 +24,8 @@ You also find two real world charts (*.eld) in folder [**Program**](https://gith
 The program lets you set various operational parameters. The most important of course is the  
 - Maximum Current
 
-Additionally the load will monitor various set parameters and triggers an alarm plus turning itself off if required:
+Additionally the load will monitor various definable parameters and triggers an alarm plus turning itself off if required:
+
 - LVP...Low Voltage Protection: When the voltage drops below a set value then the load will turn itself off. This is important for discharge tests on batteries in order to protect the battery.
 - OAH...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
 - OHP...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
