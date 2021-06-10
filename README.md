@@ -40,4 +40,4 @@ Please note:
 Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In those cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
 
 ## Important: ##
-Don't forget to set the hardware version of the device before controlling the device (Settings->Hardware Version->25W/35W) !
+Don't forget to set the correct hardware version of the device before controlling the device (Settings->Hardware Version->25W/35W) !
