@@ -5,7 +5,8 @@ This program controls "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on dif
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/XY-FZ35a.jpg)
 
 A programmable electronic load emulates DC or AC resistance loads required to perform functional tests of batteries, different types of power supplies, solar cells, technical equipment, etc. There are many other useful scenarios.
-In the simpliest case an electronic load just sinks current (absorbes power). The amount of current can be set and the load tries to keep it stable even when the applied voltage changes. The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W.
+In the simpliest case an electronic load just sinks current (absorbes power). The amount of current can be set and the load tries to keep it stable even when the applied voltage changes.  
+The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W.
 That doesn't sound much but really is enough for most cases.
 
 ## The Control Program ##
