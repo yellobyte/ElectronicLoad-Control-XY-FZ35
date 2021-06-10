@@ -22,13 +22,13 @@ You also find two real world charts (*.eld) in folder [**Program**](https://gith
 ## Operational settings ##
 
 The program lets you set various operational parameters. The most important of course is the  
-- Maximum Current
+- **Maximum Current**
 
 Additionally the load will monitor various definable parameters and triggers an alarm plus turning itself off if required:
 
-- LVP...Low Voltage Protection: When the voltage drops below a set value then the load will turn itself off. This is important for discharge tests on batteries in order to protect the battery.
-- OAH...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
-- OHP...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
+- **LVP**...Low Voltage Protection: When the voltage drops below a set value then the load will turn itself off. This is important for discharge tests on batteries in order to protect the battery.
+- **OAH**...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
+- **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
 
 ## Wiring ##
 
@@ -41,11 +41,11 @@ This program uses this option to control the devices. For that you only need a c
 
 The devices have different protection mechanisms built in, in order to protect themself.
 
-- OVP...Over Voltage Protection: When the voltage is greater then a set value the load will turn itself off.
-- OCP...Over Current Protection: When the current is greater then a set value the load will turn itself off.
-- OPP...Over Power Protection: When the power it absorbes gets greater then a set value then the load will turn itself off.
+- **OVP**...Over Voltage Protection: When the voltage is greater then a set value the load will turn itself off.
+- **OCP**...Over Current Protection: When the current is greater then a set value the load will turn itself off.
+- **OPP**...Over Power Protection: When the power it absorbes gets greater then a set value then the load will turn itself off.
 
-Please note:   
+**Please note:**  
 Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In those cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
 
 ## Important: ##
