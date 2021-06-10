@@ -21,7 +21,7 @@ You find a few real world charts in folder [**Program**](https://github.com/yell
 The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). This program uses this option to control the devices.
 The only thing needed is a cheap USB-TTL converter between PC and the load.
 
-![github](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Doc/USB-TTL-Wiring.JPG)
+![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/blob/main/Doc/USB-TTL-Wiring.jpg)
 
 ## XY-FZ25 & XY-FZ35 Integrated Overload Protection ##
 
