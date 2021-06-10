@@ -19,6 +19,16 @@ For more pics pls look in folder [**Doc**](https://github.com/yellobyte/Electron
 
 You also find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). You can load them into the program and have a look at them.
 
+## Operational settings ##
+
+The program lets you set various operational parameters. The most important of course is the  
+- Maximum Current
+
+Additionally the load will monitor various parameters and triggers an alarm plus turning itself off if required:
+- LVP...Low Voltage Protection: When the voltage drops below a set value then the load will turn itself off. This is important for discharge tests on batteries in order to protect the battery.
+- OAH...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
+- OHP...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
+
 ## Wiring ##
 
 The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). They accept operating instructions and send status messages if requested.  
@@ -33,11 +43,6 @@ The devices have different protection mechanisms built in, in order to protect t
 - OVP...Over Voltage Protection: When the voltage is greater then a set value the load will turn itself off.
 - OCP...Over Current Protection: When the current is greater then a set value the load will turn itself off.
 - OPP...Over Power Protection: When the power it absorbes gets greater then a set value then the load will turn itself off.
-
-When turned on the load will monitor various parameters and triggers an alarm plus turning itself off if required:
-- LVP...Low Voltage Protection: When the voltage drops below a set value then the load will turn itself off. This is important for discharge tests on batteries in order to protect the battery.
-- OAH...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
-- OHP...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
 
 Please note:   
 Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In those cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
