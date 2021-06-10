@@ -1,6 +1,6 @@
 # XY-FZ35 Electronic Load Control Program
  
-This program can be used to control "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on different internet sites, mainly from Asia. Instruction manuals for those devices can often be found on the resellers web sites. In folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Doc) you find some specs.
+This program can be used to control "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on different internet sites, mainly from Asia. Instruction manuals for those devices can often be found on the resellers web sites. In folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc) you find some specs.
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/XY-FZ35.jpg)
 
@@ -10,11 +10,11 @@ In the simpliest case an electronic load just sinks current (absorbes power). Th
 ## The Control Program ##
 
 I'm using the combination program + electronic load mainly to do accu/battery discharge tests and sometimes for testing solar power cells. The program displays a chart, can write the final chart to hard drive, load a chart from hard drive, print the chart, etc.
-For more pics pls look in folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/raw/main/Doc). You find the executable in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Program). The program runs on Win8.1/Win10. In rare cases you need to install the visual studio 2017 runtime libraries (easily found on the internet).
+For more pics pls look in folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc). You find the executable in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). The program runs on Win8.1/Win10. In rare cases you need to install the visual studio 2017 runtime libraries (easily found on the internet).
 
 ![github](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/raw/main/Doc/Load1a.JPG)
 
-You find a few real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Program). You can load them into the program and have a look at them.
+You find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). You can load them into the program and have a look at them.
 
 ## Wiring ##
 
