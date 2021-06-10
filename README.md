@@ -10,7 +10,7 @@ In the simpliest case an electronic load just sinks current (absorbes power). Th
 ## The Control Program ##
 
 I'm using the program + electronic load mainly to do accu/battery discharge tests and for testing solar power cells. The program displays a chart, can write the final chart to hard drive, load a chart from hard drive, print the chart, etc.
-More pics in folder Doc. The program runs on Win8.1/Win10.
+More pics in folder Doc. The executable in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/blob/main/Program). The program runs on Win8.1/Win10.
 
 <img src="Doc/Load1a.jpg">
 
