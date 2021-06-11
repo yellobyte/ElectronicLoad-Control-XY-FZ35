@@ -9,9 +9,11 @@ In the simpliest case an electronic load just sinks current (absorbes power). Th
 The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W.
 That doesn't sound much but really is enough for most cases.
 
+I use the combination program + electronic load mainly for accu/battery discharge tests and also solar power cell tests every now and then.  
+
 ## The Control Program ##
 
-I'm using the combination program + electronic load mainly for accu/battery discharge tests and also solar power cell tests every now and then. The program displays a chart, can write the final chart to hard drive, load a chart from hard drive, print the chart, etc.  
+The program "ElectronicLoad" **displays** a chart, can **save** the final chart to hard drive, **load** a previously saved chart from hard drive, **print** the chart and **save a chart as bitmap**.  
 That gives you the easy ability to compare the final test results of different batteries or accus for example.  
 For more pics pls look in folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc). You find the executable in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). The program runs on Win8.1/Win10. In rare cases you additionally need to install the visual studio 2017 runtime libraries (easily found on the internet).
 
