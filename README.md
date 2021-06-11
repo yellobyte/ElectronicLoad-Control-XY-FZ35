@@ -1,4 +1,4 @@
-# XY-FZ35 Electronic Load Control Program
+# XY-FZ25 & XY-FZ35 Electronic Load Control Program
  
 This program controls "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on different internet sites, mainly from Asia. Instruction manuals for those devices can often be found on the resellers web sites. In folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc) you find some specs.
 
