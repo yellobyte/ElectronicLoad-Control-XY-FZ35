@@ -35,7 +35,7 @@ Additionally the load will monitor various definable parameters and triggers an 
 ## Wiring ##
 
 The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). They accept operating instructions and send status messages if requested.  
-This program uses this option to control the devices. For that you only need a cheap USB-TTL converter (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and the device.
+This program uses this option to control the devices. For that you only need a cheap **USB-TTL converter module** (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and the device.
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
 
