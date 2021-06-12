@@ -13,7 +13,7 @@ I use the combination program + electronic load mainly for accu/battery discharg
 
 ## The Control Program ##
 
-The program "ElectronicLoad" in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program) does **display** a chart, can **save** the final chart to hard drive, **load** a previously saved chart from hard drive, **print** the chart and **save a chart as bitmap**. That gives you the easy ability to compare the final test results of different batteries or accus for example.  
+The program "ElectronicLoad" in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program) does **display** live readings in a chart, can **save** the final chart to hard drive, **load** a previously saved chart from hard drive, **print** the chart and **save a chart as bitmap**. That gives you the easy ability to compare the final test results of different batteries or accus for example.  
 
 For more pics pls look in folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc). The program runs on Win8.1/Win10. Depending on your Windows installation you additionally need to install the visual studio 2017 runtime libraries (easily found on the internet).
 
