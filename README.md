@@ -11,7 +11,7 @@ That doesn't sound much but really is enough for most cases.
 
 I use the combination program + electronic load mainly for accu/battery discharge tests and also solar power cell tests every now and then.  
 
-## The Control Program ##
+## :zap: The Control Program
 
 The program "ElectronicLoad" in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program) does **display** live readings in a chart, can **save** the final chart to hard drive, **load** a previously saved chart from hard drive, **print** the chart and **save a chart as bitmap**. That gives you the easy ability to compare the final test results of different batteries or accus for example.  
 
@@ -21,7 +21,7 @@ For more pics pls look in folder [**Doc**](https://github.com/yellobyte/Electron
 
 You also find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). You can load them into the program and have a look at them.
 
-## Operational settings ##
+## :hammer_and_wrench: Operational settings
 
 The program lets you set various operational parameters. The most important of course is the  
 - **Maximum Current**
@@ -32,14 +32,14 @@ Additionally the load will monitor various definable parameters and triggers an 
 - **OAH**...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
 - **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
 
-## Wiring ##
+## :information_source: Wiring
 
 The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). They accept operating instructions and send status messages if requested.  
 This program uses this option to control the devices. For that you only need a cheap **USB-TTL converter module** (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and the device.
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
 
-## XY-FZ25 & XY-FZ35 Integrated Overload Protection ##
+## :safety_vest: XY-FZ25 & XY-FZ35 Integrated Overload Protection
 
 The devices have different protection mechanisms built in, in order to protect themself.
 
@@ -50,5 +50,9 @@ The devices have different protection mechanisms built in, in order to protect t
 **Please note:**  
 Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In those cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
 
-## Important: ##
+## :heavy_exclamation_mark: Important:
 Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !
+
+## :clap:  Supporters
+
+[![Stargazers repo roster for @yellobyte/ElectronicLoad-Control-XY-FZ35](https://reporoster.com/stars/yellobyte/ElectronicLoad-Control-XY-FZ35)](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/stargazers) 
