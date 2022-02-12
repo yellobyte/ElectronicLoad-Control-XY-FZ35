@@ -53,10 +53,13 @@ The devices have different self protection mechanisms built in. If triggered, th
 - **OCP**...Over Current Protection: When the load current is higher then a set value.
 - **OPP**...Over Power Protection: When the load power it absorbes exceeds a set value.  
 
+Pressing CTRL+L will retrieve the actual protection limits from the device and show them in the program window (top left), provided the device is properly connected.
+
 ## :information_source: Wiring
 
 The devices provide a possibility to communicate via serial port (9600,8,N,1) with TTL-level (3.3V !). They accept operating instructions and send status messages if requested.  
-This program uses this option to control the devices. For that you only need a cheap **USB-TTL converter module** (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and the device.
+
+This program uses this option to control the devices. For that you only need a cheap **USB-TTL converter module** (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and device.
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
 
