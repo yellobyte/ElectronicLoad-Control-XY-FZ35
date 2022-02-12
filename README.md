@@ -29,7 +29,7 @@ You find two real world charts (*.eld) in folder [**Program**](https://github.co
 ### :hammer_and_wrench: Operational settings
 
 The program lets you set various operational parameters. The most important of course is the  
-- **Maximum Current**
+- **Maximum Load Current**
 
 Additionally the load will monitor various definable parameters and trigger an alarm plus turn itself off if required:
 
