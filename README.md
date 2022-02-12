@@ -24,7 +24,7 @@ For more pics have a look at folder [**Doc**](https://github.com/yellobyte/Elect
 
 ![github](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/raw/main/Doc/Load1a.JPG)
 
-You also find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). You can load them into the program and have a look at them.
+You find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). Load them into the program and have a look at them.
 
 ### :hammer_and_wrench: Operational settings
 
