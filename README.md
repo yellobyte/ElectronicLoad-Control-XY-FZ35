@@ -4,18 +4,21 @@ This program controls "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on dif
 
    ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/XY-FZ35a.jpg)
 
-A **programmable electronic load** emulates DC or AC resistance loads required to perform functional tests of batteries, different types of power supplies, solar cells, technical equipment, etc. There are many other useful scenarios.
+A **programmable electronic load** emulates DC or AC resistance loads required to perform functional tests on batteries, all sorts of power supplies, solar cells, technical equipment, etc. There are many other useful scenarios.
 In the simplest case an electronic load just sinks current (absorbes power). The amount of current can be set and the load tries to keep it stable even when the applied voltage changes.  
 
 The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W. That doesn't sound much but really is enough for most cases.
 
-I use the combination program + electronic load mainly for accu/battery discharge tests and also solar power cell tests every now and then.  
+I use the combination program + electronic load mainly for battery/accumulator discharge tests and solar power cell tests every now and then.  
 
 ## :zap: The Control Program
 
-The program "Electronic Load" in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program) does **display** live readings in a chart, can **save** the final chart to hard drive as **data file** (_.eld_), **bitmap** (_*.bmp_) or **csv file** (_*.csv_). Additionally it can **print** the chart and **load** a previously saved chart (_*.eld_ data file) from hard drive. That gives you the easy ability to compare the final test results of various batteries/accus/etc.  
+The program "Electronic Load" in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program) does **display** live readings in a chart. Furthermore it can:  
+- **save** charts to hard drive as **data file** (_.eld_), **bitmap file** (_*.bmp_) or **csv file** (_*.csv_)
+- **print** charts
+- **load** previously saved charts (_*.eld_ data files) from hard drive, which gives you the easy ability to compare the final test results of various batteries/accumulators/etc later on
 
-If you associate _*.eld_ files with this program you only need to double click on them to see saved charts.
+If you **associate** _*.eld_ files with this program you only need to double click them to see saved charts.
 
 For more pics have a look at folder [**Doc**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Doc). The program was tested and runs on Win8.1/Win10/Win11. 
 
@@ -28,11 +31,11 @@ You also find two real world charts (*.eld) in folder [**Program**](https://gith
 The program lets you set various operational parameters. The most important of course is the  
 - **Maximum Current**
 
-Additionally the load will monitor various definable parameters and triggers an alarm plus turning itself off if required:
+Additionally the load will monitor various definable parameters and trigger an alarm plus turn itself off if required:
 
-- **LVP**...Low Voltage Protection: When the voltage drops below a set value then the load will turn itself off. This is important for discharge tests on batteries in order to protect the battery.
-- **OAH**...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set value has been reached. This feature too is for protecting the battery when doing discharge tests.
-- **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests. 
+- **LVP**...Low Voltage Protection: When the load voltage drops below a set value then the device will turn itself off. This is important for discharge tests in order to protect the accumulator/battery.
+- **OAH**...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set limit has been reached. This feature too is for protecting the accumulator/battery when doing discharge tests.
+- **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests that need to run for hours or days. 
 
 ### :heavy_exclamation_mark: Important
 Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
@@ -44,11 +47,11 @@ In case you get a windows error message trying to run the program (like "mfc140u
 
 ## :safety_vest: XY-FZ25 & XY-FZ35 Integrated Overload Protection
 
-The devices have different protection mechanisms built in, in order to protect themself.
+The devices have different self protection mechanisms built in. If triggered, the device will switch off:
 
-- **OVP**...Over Voltage Protection: When the voltage is greater then a set value the load will turn itself off.
-- **OCP**...Over Current Protection: When the current is greater then a set value the load will turn itself off.
-- **OPP**...Over Power Protection: When the power it absorbes gets greater then a set value then the load will turn itself off.  
+- **OVP**...Over Voltage Protection: When the load voltage is higher then a set value.
+- **OCP**...Over Current Protection: When the load current is higher then a set value.
+- **OPP**...Over Power Protection: When the load power it absorbes exceeds a set value.  
 
 ## :information_source: Wiring
 
@@ -58,7 +61,7 @@ This program uses this option to control the devices. For that you only need a c
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
 
 **Please note:**  
-Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In those cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
+Some alarms (OPP,OAH,OHP) can't be cleared via serial communication. In such cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.
 
 ## :clap:  Supporters
 
