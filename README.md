@@ -33,9 +33,9 @@ The program lets you set various operational parameters. The most important of c
 
 Additionally the load will monitor various definable parameters and trigger an alarm plus turn itself off if required:
 
-- **LVP**...Low Voltage Protection: When the load voltage drops below a set value then the device will turn itself off. This is important for discharge tests in order to protect the accumulator/battery.
-- **OAH**...Maximum Discharge Capacity: When the load is turned on it calculates the accumulated discharge capacity (in Ah) and turns itself off when a set limit has been reached. This feature too is for protecting the accumulator/battery when doing discharge tests.
-- **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan than the load will turn itself off. Important for discharge tests that need to run for hours or days. 
+- **LVP**...Low Voltage Protection: When the load voltage drops below a set value. This is important for discharge tests in order to protect the accumulator/battery.
+- **OAH**...Maximum Discharge Capacity: When the load reaches a defined accumulated discharge capacity (in Ah). This feature too is for protecting the accumulator/battery when doing discharge tests.
+- **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan. Important for discharge tests that need to run for hours or even days. 
 
 ### :heavy_exclamation_mark: Important
 Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
