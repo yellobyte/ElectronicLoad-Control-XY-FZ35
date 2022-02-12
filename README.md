@@ -6,8 +6,8 @@ This program controls "Electronic Load" devices XY-FZ25 and XY-FZ35, sold on dif
 
 A **programmable electronic load** emulates DC or AC resistance loads required to perform functional tests of batteries, different types of power supplies, solar cells, technical equipment, etc. There are many other useful scenarios.
 In the simpliest case an electronic load just sinks current (absorbes power). The amount of current can be set and the load tries to keep it stable even when the applied voltage changes.  
-The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W.
-That doesn't sound much but really is enough for most cases.
+
+The XY-FZ25 is limited to 4A/25W and the XY-FZ35 to 5A/35W. That doesn't sound much but really is enough for most cases.
 
 I use the combination program + electronic load mainly for accu/battery discharge tests and also solar power cell tests every now and then.  
 
