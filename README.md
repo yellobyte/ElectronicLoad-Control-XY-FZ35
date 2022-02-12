@@ -37,7 +37,7 @@ Additionally the load will monitor various definable parameters and triggers an 
 ### :heavy_exclamation_mark: Important
 Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
 
-### :information_source: Installation
+## :information_source: Installation
 Just copy the 32bit or 64bit version of the executable into a folder and that's basically it.  
 In case you get a windows error message trying to run the program (like "mfc140u.dll missing" or similar) depending on your Windows installation you additionally have to install the 32bit (x86) or 64bit (x64) version of the **Microsoft Visual C++ Redistributables 2019** or higher. Those packages are easily available on Microsofts websites, as of today (02/2022) from [here](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) for example.
 
