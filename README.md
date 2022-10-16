@@ -63,3 +63,8 @@ The devices provide a possibility to communicate via serial port (9600,8,N,1) wi
 This program uses this option to control the devices. For that you only need a cheap **USB-TTL converter module** (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and device.
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
+
+## :relaxed: Postscript
+
+If you run into trouble with this program or have suggestions how to improve it, feel free to contact me.  
+If you like it, please give it a star.
