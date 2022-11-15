@@ -66,5 +66,5 @@ This program uses this option to control the devices. For that you only need a c
 
 ## :relaxed: Postscript
 
-If you run into trouble with this program or have suggestions how to improve it, feel free to contact me.  
-If you like it, please give it a star.
+If you run into trouble with this program or have suggestions how to improve it, feel free to contact me. If you like it, please give it a star.  
+Thanks Thomas
