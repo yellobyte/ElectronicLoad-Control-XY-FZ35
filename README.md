@@ -45,7 +45,7 @@ Don't forget to **set the correct hardware version** of the device before contro
 ## :information_source: Installation
 Depending on your Windows architecture copy the 32bit or 64bit version of the executable into a program folder and that's basically it.  
 
-In case you get a windows error message trying to run the program (like "mfc140u.dll missing" or similar) depending on your Windows installation you additionally need to install the **Microsoft Visual C++ Redistributables 2019 (x86/x64)** or higher. Momentarily (02/2022) they are available from [here](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).  
+In case you get a windows error message trying to run the program (like "mfc14xx.dll missing" or similar) depending on your Windows installation you additionally need to install the **Microsoft Visual C++ Redistributables 2022 (x86/x64)** or higher. Momentarily (02/2024) they are available from [here](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).  
 
 ## :safety_vest: XY-FZ25 & XY-FZ35 Integrated Overload Protection
 
