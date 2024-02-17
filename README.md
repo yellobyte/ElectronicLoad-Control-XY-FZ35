@@ -35,6 +35,10 @@ Additionally the load will monitor various definable parameters and trigger an a
 - **OAH**...Maximum Discharge Capacity: When the load reaches a defined accumulated discharge capacity limit (in Ah). This feature too is for protecting the accumulator/battery when doing discharge tests.
 - **OHP**...Maximum Discharge Time: When the runtime reaches a set timespan. Important for tests that need to run for hours or even days. 
 
+Changing those values can be done either via the programs menu (Settings) or by clicking with the mouse on the value in the main dialog. The respective dialog will then show up.
+
+Mouse clicks on the left chart axis will change its scale. This can also be done via menu of course.
+
 ### :heavy_exclamation_mark: Important
 Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
 
@@ -51,7 +55,9 @@ The devices have different self protection mechanisms built in and will turn off
 - **OCP**...Over Current Protection: When the load current gets higher than the set OCP current limit.
 - **OPP**...Over Power Protection: When the power it absorbes gets greater than the set OPP power limit.
 
-Pressing CTRL+L will retrieve the actual protection limits from the device and show them in the program window (top left section), provided the device is properly connected.
+Pressing CTRL+L will retrieve the actual protection limits from the device and show them in the program window (top left section), provided the device is properly connected.  
+
+If reading limits is not possible a warning is displayed. Same when sending limits to the device hasn't been successful or the device didn't answer as expected. In all error cases the values in section "Protection Limits" will stay at zero.  
 
 **Please note:**  
 Some alarms (OPP, OAH, OHP) can't be cleared via serial communication. In such cases the On/Off Button on the device itself must be pressed to end the alarm and get the device operational again. Message Boxes will tell you if that's the case.  
@@ -63,6 +69,14 @@ The devices provide a possibility to communicate via serial port (9600,8,N,1) wi
 This program uses this option to control the devices. For that you only need a cheap **USB-TTL converter module** (mostly with IC CP210x/CH340/FTDI232) between your Laptop/PC and device.
 
 ![github](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/USB-TTL-Wiring.jpg)
+
+## :information_source: Revision history
+
+- 2019/05: V1.0.0, Initial version, built with MS Visual Studio 2019. 
+- 2019/10: V1.0.5, Some bugfixing to catch all alarms properly.  
+- 2022/02: V1.1.0, Export chart to *.csv added. 7-digit display for load status added. VS2022.  
+- 2022/03: V1.2.0, Error messages improved.  
+- 2024/02: V1.3.1, A nasty 2-digit COM error fixed. Load current can now be set to 0.00A which is helpful for monitoring only. Option to display LVP voltage in chart added. Horizontal scrolling on event list box activated. 
 
 ## :relaxed: Postscript
 
