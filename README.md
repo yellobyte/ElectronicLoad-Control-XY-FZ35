@@ -22,7 +22,7 @@ For more pics have a look at folder [**Doc**](https://github.com/yellobyte/Elect
 
 ![github](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/raw/main/Doc/Load1a.JPG)
 
-You find two real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). Load them into the program and have a look at them.
+You find some real world charts (*.eld) in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program). Load them into the program and have a look at them.
 
 ### :hammer_and_wrench: Operational settings
 
@@ -77,6 +77,7 @@ This program uses this option to control the devices. For that you only need a c
 - 2022/02: V1.1.0, Export chart to *.csv added. 7-digit display for load status added. VS2022.  
 - 2022/03: V1.2.0, Error messages improved.  
 - 2024/02: V1.3.1, A nasty 2-digit COM error fixed. Load current can now be set to 0.00A which is helpful for monitoring only. Option to display LVP voltage in chart added. Horizontal scrolling on event list box activated. 
+- 2024/02: V1.3.2, If the voltage drops from above LVP straight down to 0.00V then the load unexpectedly stays on and does not report a LVP alarm. This is now detected and the load is then instructed to switch off. This scenario can happen if the battery has been disconnected manually or the internal battery BMS turned the battery output off before the decreasing battery voltage hit the set LVP level.
 
 ## :relaxed: Postscript
 
