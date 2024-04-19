@@ -78,7 +78,7 @@ This program uses this option to control the devices. For that you only need a c
 - 2022/03: V1.2.0, Error messages improved.  
 - 2024/02: V1.3.1, A nasty 2-digit COM error fixed. Load current can now be set to 0.00A which is helpful for monitoring only. Option to display LVP voltage in chart added. Horizontal scrolling on event list box activated. 
 - 2024/02: V1.3.2, If the voltage drops from above LVP straight down to 0.00V then the load unexpectedly stays on and does not report a LVP alarm. This is now detected and the load is then instructed to switch off. This scenario can happen if the battery has been disconnected manually or the internal battery BMS turned the battery output off before the decreasing battery voltage hit the set LVP level.
-- 2024/03: V1.4.0, New settings option will request the system to stay awake and not enter sleep mode while load is switched ON. This will not work on all systems though, esp. not on systems with active "modern standby" feature (e.g. newer laptops). You actually have to try it out on your particular machine before you can rely on it.
+- 2024/03: V1.4.0, New settings option will request the system to stay awake and not enter sleep mode while load is switched ON. This will not work on all systems though, esp. not on systems with active "modern standby" feature (e.g. newer laptops) running on battery. You actually have to try it out on your particular machine before you can rely on it.
 
 ## :relaxed: Postscript
 
