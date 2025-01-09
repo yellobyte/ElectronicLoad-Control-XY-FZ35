@@ -39,8 +39,13 @@ Changing those values can be done either via the programs menu (Settings) or by 
 
 Mouse clicks on the left chart axis will change its scale. This can also be done via menu of course.
 
-### :heavy_exclamation_mark: Important
+### :heavy_exclamation_mark: Important I
 Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
+
+### :bangbang: Important II
+The control program expects the device to use the official protocol as shown [here](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/Communication.jpg). If it doesn't then such device will not be detected and a communication is therefore not possible.  
+
+However, recent feedback indicate that there are new devices in the wild that use a modified protocol. The control program could be changed easily to accept another protocol format but unfortunately I don't have such new device to play and test with.
 
 ## :information_source: Installation
 Depending on your Windows architecture copy the 32bit or 64bit version of the executable into a program folder and that's basically it.  
