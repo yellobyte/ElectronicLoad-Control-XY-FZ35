@@ -40,12 +40,12 @@ Changing those values can be done either via the programs menu (Settings) or by 
 Mouse clicks on the left chart axis will change its scale. This can also be done via menu of course.
 
 ### :heavy_exclamation_mark: Important I
-Don't forget to **set the correct hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
+Don't forget to set the correct **hardware version** of the device before controlling it (Settings->Hardware Version->25W/35W) !  
 
 ### :bangbang: Important II
-The control program expects the device to use the official protocol as shown [here](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/Communication.jpg). If it doesn't then such device will not be detected and a communication is therefore not possible.  
+XY-FZx5 devices sold on various Chinese sales platforms (e.g. Aliexpress) use the official **communication protocol** as shown [here](https://github.com/yellobyte/ElectronicLoad-Control-XY-FZ35/raw/main/Doc/Communication.jpg). Such devices need the protocol setting 1 (Settings->Protocol Version->Version 1 (Standard)).  
 
-However, recent feedback indicate that there are new devices in the wild that use a modified protocol. The control program could be changed easily to accept another protocol format but unfortunately I don't have such new device to play and test with.
+For whatever reason, devices sold on amazon.co.jp use a different protocol which is documented nowhere and also behave slightly different. Protocol setting 2 is required here (Settings->Protocol Version->Version 2). Many thanks to Takano from Japan (https://ps-tec.jp) for his support and especially for sponsoring me such device which only made it possible to integrate this protocol into the control program.
 
 ## :information_source: Installation
 Depending on your Windows architecture copy the 32bit or 64bit version of the executable into a program folder and that's basically it.  
@@ -84,6 +84,7 @@ This program uses this option to control the devices. For that you only need a c
 - 2024/02: V1.3.1, A nasty 2-digit COM error fixed. Load current can now be set to 0.00A which is helpful for monitoring only. Option to display LVP voltage in chart added. Horizontal scrolling on event list box activated. 
 - 2024/02: V1.3.2, If the voltage drops from above LVP straight down to 0.00V then the load unexpectedly stays on and does not report a LVP alarm. This is now detected and the load is then instructed to switch off. This scenario can happen if the battery has been disconnected manually or the internal battery BMS turned the battery output off before the decreasing battery voltage hit the set LVP level.
 - 2024/03: V1.4.0, New settings option will request the system to stay awake and not enter sleep mode while load is switched ON. This will not work on all systems though, esp. not on systems with active "modern standby" feature (e.g. newer laptops) while running on battery. You actually have to try it out on your particular machine before you can rely on it.
+- 2025/01: V1.5.0, Integration of a new communication protocol needed for XY-FZx5 devices sold on amazon.co.jp. Improved export function for *.csv files.
 
 ## :relaxed: Postscript
 
