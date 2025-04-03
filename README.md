@@ -29,6 +29,10 @@ You find some real world charts (*.eld) in folder [**Program**](https://github.c
 The program lets you set various operational parameters. The most important of course is the  
 - **Maximum Load Current**
 
+As of V1.5.1 the maximal adjustable current value can be limited by manually creating a REG_EXPAND_SZ registry entry:  
+&ensp;&ensp;&ensp;&ensp; _HKEY_CURRENT_USER\Software\YelloByte\ElectronicLoad\CurrentLimit_  
+Or simply edit the supplied file _current_limit.reg_ in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program), import it into your PC's registry and the control program will limit the possible current setting to the given value. After starting the program the event window will tell if a current limit has been applied.
+
 Additionally the load will monitor various definable parameters and trigger an alarm plus turn itself off if required:
 
 - **LVP**...Low Voltage Protection: When the load voltage drops below a set limit. This is important for discharge tests in order to protect the accumulator/battery.
@@ -77,14 +81,15 @@ This program uses this option to control the devices. For that you only need a c
 
 ## :information_source: Revision history
 
-- 2019/05: V1.0.0, Initial version, built with MS Visual Studio 2019. 
-- 2019/10: V1.0.5, Some bugfixing to catch all alarms properly.  
-- 2022/02: V1.1.0, Export chart to *.csv added. 7-digit display for load status added. VS2022.  
-- 2022/03: V1.2.0, Error messages improved.  
-- 2024/02: V1.3.1, A nasty 2-digit COM error fixed. Load current can now be set to 0.00A which is helpful for monitoring only. Option to display LVP voltage in chart added. Horizontal scrolling on event list box activated. 
-- 2024/02: V1.3.2, If the voltage drops from above LVP straight down to 0.00V then the load unexpectedly stays on and does not report a LVP alarm. This is now detected and the load is then instructed to switch off. This scenario can happen if the battery has been disconnected manually or the internal battery BMS turned the battery output off before the decreasing battery voltage hit the set LVP level.
-- 2024/03: V1.4.0, New settings option will request the system to stay awake and not enter sleep mode while load is switched ON. This will not work on all systems though, esp. not on systems with active "modern standby" feature (e.g. newer laptops) while running on battery. You actually have to try it out on your particular machine before you can rely on it.
+- 2025/04: V1.5.1, Registry entry to limit the maximal adjustable current value.
 - 2025/01: V1.5.0, Integration of a new communication protocol needed for XY-FZx5 devices sold on amazon.co.jp. Improved export function for *.csv files.
+- 2024/03: V1.4.0, New settings option will request the system to stay awake and not enter sleep mode while load is switched ON. This will not work on all systems though, esp. not on systems with active "modern standby" feature (e.g. newer laptops) while running on battery. You actually have to try it out on your particular machine before you can rely on it.
+- 2024/02: V1.3.2, If the voltage drops from above LVP straight down to 0.00V then the load unexpectedly stays on and does not report a LVP alarm. This is now detected and the load is then instructed to switch off. This scenario can happen if the battery has been disconnected manually or the internal battery BMS turned the battery output off before the decreasing battery voltage hit the set LVP level.
+- 2024/02: V1.3.1, A nasty 2-digit COM error fixed. Load current can now be set to 0.00A which is helpful for monitoring only. Option to display LVP voltage in chart added. Horizontal scrolling on event list box activated. 
+- 2022/03: V1.2.0, Error messages improved.  
+- 2022/02: V1.1.0, Export chart to *.csv added. 7-digit display for load status added. VS2022.  
+- 2019/10: V1.0.5, Some bugfixing to catch all alarms properly.  
+- 2019/05: V1.0.0, Initial version, built with MS Visual Studio 2019. 
 
 ## :relaxed: Postscript
 
