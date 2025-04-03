@@ -32,7 +32,7 @@ The program lets you set various operational parameters. The most important of c
 As of V1.5.1 the maximal adjustable current value can be limited with a REG_EXPAND_SZ registry entry:  
 &ensp;&ensp;&ensp;&ensp; _HKEY_CURRENT_USER\Software\YelloByte\ElectronicLoad\CurrentLimit_  
 Simply edit the supplied file _current_limit.reg_ in folder [**Program**](https://github.com/yellobyte/ElectronicLoad_Control_XY-FZ35/tree/main/Program) and import it into your PC's registry.  
-The control program will then limit the possible current setting to the given value. After starting the program the event window will tell if a current limit has been applied.
+The control program will then limit the possible current setting to the given value. After starting the program the event tab will tell if a current limit has been applied.
 
 Additionally the load will monitor various definable parameters and trigger an alarm plus turn itself off if required:
 
